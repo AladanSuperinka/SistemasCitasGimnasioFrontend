@@ -153,7 +153,7 @@ export default function Enrollments({ role }) {
     try {
       await apiFetch(`/api/enrollments/${changing.id}`, {
         method: "PUT",
-        body: JSON.stringify({ schedule_id: Number(newScheduleId) }),
+        body: JSON.stringify({ new_schedule_id: Number(newScheduleId) }),
       });
       setChangeOpen(false);
       setChanging(null);
