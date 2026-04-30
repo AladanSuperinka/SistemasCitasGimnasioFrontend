@@ -2,8 +2,8 @@ import { useState } from "react";
 import { apiFetch } from "./api";
 
 export default function Login({ onSuccess }) {
-  const [email, setEmail] = useState("admin@gym.com");
-  const [password, setPassword] = useState("Admin123");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
