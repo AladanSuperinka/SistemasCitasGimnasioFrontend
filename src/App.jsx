@@ -9,8 +9,8 @@ import Dashboard from "./Dashboard";
 import Reports from "./Reports";
 
 export default function App() {
-  const [email, setEmail] = useState("admin@gym.com");
-  const [password, setPassword] = useState("Admin123");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [me, setMe] = useState(null);
 
   const [error, setError] = useState("");
@@ -201,7 +201,7 @@ export default function App() {
                     className="w-full rounded-2xl border border-white/10 bg-zinc-950/40 px-4 py-3 outline-none focus:border-yellow-400/60 focus:ring-4 focus:ring-yellow-400/10"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="admin@gym.com"
+                    placeholder="correo@correo.com"
                   />
                 </Field>
 
@@ -210,7 +210,7 @@ export default function App() {
                     className="w-full rounded-2xl border border-white/10 bg-zinc-950/40 px-4 py-3 outline-none focus:border-yellow-400/60 focus:ring-4 focus:ring-yellow-400/10"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="••••••••"
+                    placeholder="colocar contraseña"
                     type="password"
                   />
                 </Field>
