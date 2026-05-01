@@ -84,7 +84,7 @@ export default function Login({ onSuccess }) {
               className="w-full rounded-2xl border border-white/10 bg-zinc-950/40 px-4 py-3 outline-none focus:border-yellow-400/60 focus:ring-4 focus:ring-yellow-400/10"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="admin@gym.com"
+              placeholder=""
             />
           </Field>
 
@@ -93,7 +93,7 @@ export default function Login({ onSuccess }) {
               className="w-full rounded-2xl border border-white/10 bg-zinc-950/40 px-4 py-3 outline-none focus:border-yellow-400/60 focus:ring-4 focus:ring-yellow-400/10"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="••••••••"
+              placeholder=""
               type="password"
             />
           </Field>
